@@ -8,9 +8,9 @@ lerna-debug.log*
 .pnpm-debug.log*
 
 # Data files
-*.csv
-backend/data/movies.csv
-backend/data/ratings.csv
+/backend/*.csv
+/backend/data/movies.csv
+/backend/data/ratings.csv
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
@@ -133,3 +133,49 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+# Frontend dependencies
+/frontend/node_modules
+/frontend/.pnp
+/frontend/.pnp.js
+
+# Frontend testing
+/frontend/coverage
+
+# Frontend production
+/frontend/build
+
+# Frontend misc
+/frontend/.DS_Store
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
+/frontend/npm-debug.log*
+/frontend/yarn-debug.log*
+/frontend/yarn-error.log*
+
+# Backend
+## Python
+/backend/__pycache__/
+/backend/*.py[cod]
+/backend/*$py.class
+/backend/venv/
+/backend/.env
+
+## Data files
+/backend/*.csv
+/backend/movies.csv
+/backend/ratings.csv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
