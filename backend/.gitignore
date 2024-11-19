@@ -1,0 +1,4 @@
+# Data files
+*.csv
+movies.csv
+ratings.csv
